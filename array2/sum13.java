@@ -3,17 +3,12 @@
 
 public int sum13(int[] nums) {
   int sum = 0;
-  boolean flag = false;
   for (int i=0; i<nums.length; i++){
-    if (flag) {
-      flag = false;
-      continue;
-    }
-    if (nums[i] != 13){
-      sum += nums[i];
+    if (nums[i] == 13){
+      i++;
     }
     else{
-      flag = true;
+      sum += nums[i];
     }
   }
   return sum;
