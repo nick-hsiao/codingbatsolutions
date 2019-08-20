@@ -1,6 +1,6 @@
-Recursion-1 > countHi
+//Recursion-1 > countHi
 
-Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string.
+//Given a string, compute recursively (no loops) the number of times lowercase "hi" appears in the string.
 
 public int countHi(String str) {
   if (str.length() < 2){
